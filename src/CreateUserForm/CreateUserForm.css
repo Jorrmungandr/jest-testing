@@ -1,0 +1,44 @@
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  max-width: 40rem;
+
+  padding: 40px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+.form-container h1 {
+  margin: 0 0 40px;
+}
+
+.form-container form {
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container button {
+  background-image: linear-gradient(45deg, #AF4073, #DC6B65);
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+}

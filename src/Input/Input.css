@@ -1,0 +1,38 @@
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.input-container input {
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 8px 0px;
+  outline: none;
+}
+
+.input-container label {
+  font-weight: 500;
+}
+
+.input-container .error-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  transform: translateY(120%);
+}
+
+.input-container .error-container .error-message {
+  margin: 0;
+  font-size: 0.8rem;
+  color: red;
+}
+
+.input-container .error-container.active {
+  max-height: 1rem;
+}
