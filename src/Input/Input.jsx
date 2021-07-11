@@ -11,7 +11,7 @@ function Input({
   ...props
 }) {
   return (
-    <div className="input-container">
+    <div id={`${name}-container`} className="input-container">
       <label htmlFor={name}>{label}</label>
       <input
         id={name}

@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="app-wrapper">
-      <CreateUserForm />
+      <CreateUserForm onSubmit={console.table} />
     </div>
   );
 }

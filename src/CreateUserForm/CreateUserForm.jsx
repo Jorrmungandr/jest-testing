@@ -28,7 +28,6 @@ function CreateUserForm({ onSubmit }) {
 
     if (Object.keys(errorFields).length > 0) return;
 
-    console.table(values);
     onSubmit(values);
   };
 
